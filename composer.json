@@ -1,0 +1,26 @@
+{
+    "name": "seq6/my-php-script",
+    "type": "script",
+    "autoload": {
+        "psr-4": {
+            "Seq6\\MyPhpScript\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "seq6",
+            "email": "zhuceyong180@163.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "ext-redis": "^5.3",
+        "guzzlehttp/guzzle": "^7.3",
+        "elasticsearch/elasticsearch": "^7.15",
+        "monolog/monolog": "^2.3",
+        "league/flysystem": "^2.3",
+        "ramsey/uuid": "^4.2"
+    }
+}

@@ -6,6 +6,11 @@
             "Seq6\\MyPhpScript\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "seq6",
@@ -24,6 +29,7 @@
         "mikehaertl/php-shellcommand": "^1.6",
         "league/climate": "^3.8",
         "league/csv": "^9.0",
-        "sqhlib/hanzi-convert": "^1.1"
+        "sqhlib/hanzi-convert": "^1.1",
+        "phpunit/phpunit": "^9.4"
     }
 }

@@ -17,12 +17,12 @@ class HttpClient
     /**
      * 获取http连接
      *
-     * @param integer $timeout
+     * @param int $timeout
      * @return Client
      */
     public static function getClient(int $timeout = 10): Client
     {
-        if (is_null(self::$client)) {
+        if (empty(self::$client)) {
             self::$client = new Client([RequestOptions::TIMEOUT => $timeout]);
         }
         return self::$client;
@@ -32,7 +32,7 @@ class HttpClient
      * 创建新的http连接
      *
      * @param string $baseUri
-     * @param integer $timeout
+     * @param int $timeout
      * @return Client
      */
     public static function newBaseClient(string $baseUri, int $timeout = 10): Client

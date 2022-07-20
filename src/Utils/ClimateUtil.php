@@ -29,7 +29,7 @@ class ClimateUtil
      * @param array $argv
      * @return false|Argument[]
      */
-    public static function checkArgv(string $description, array $arguments, array $argv): bool|array
+    public static function checkArgv(string $description, array $arguments, array $argv)
     {
         $climate = self::getInstance();
         $climate->description($description);
@@ -47,10 +47,10 @@ class ClimateUtil
     /**
      * 输出错误日志(红色)
      *
-     * @param string $msg
+     * @param $msg
      * @return void
      */
-    public static function printError(string $msg): void
+    public static function printError($msg): void
     {
         self::getInstance()->red($msg);
     }
@@ -58,10 +58,10 @@ class ClimateUtil
     /**
      * 输出日志(白色)
      *
-     * @param string $msg
+     * @param $msg
      * @return void
      */
-    public static function printInfo(string $msg): void
+    public static function printInfo($msg): void
     {
         self::getInstance()->out($msg);
     }
@@ -80,10 +80,10 @@ class ClimateUtil
     /**
      * 输出提示信息(绿色)
      *
-     * @param string $msg
+     * @param $msg
      * @return void
      */
-    public static function printTip(string $msg): void
+    public static function printTip($msg): void
     {
         self::getInstance()->green($msg);
     }
